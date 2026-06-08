@@ -11,7 +11,7 @@ Rebuild context for the current session, then deliver a crisp summary so the use
 
 Use the first source that works, in this order:
 
-1. **In-context history.** If this conversation's earlier turns are still in your context, use them directly — no lookup needed.
+1. **In-context history — only if verifiably complete.** Use this *only* when you can see the session's **first** user message verbatim and no part of the conversation has been compacted or summarized. A compaction/summary block is **not** the earlier turns — it is lossy and silent (you cannot tell what detail was dropped), and the long sessions that prompt a catchup are exactly the ones most likely to have been compacted. If any earlier history has been summarized, treat this source as **unavailable** and fall through to the transcript — do not summarize from a compaction block.
 2. **A session-query tool.** If your platform exposes one (e.g. a session store / SQL tool), query it for recent turns, milestones, and any referenced PRs/issues/commits.
 3. **The on-disk transcript.** Otherwise locate this session's transcript file and read it. Agent CLIs store sessions under a per-user config dir, typically keyed by working directory and a session id. Discover it:
    - Check env vars for a session id and config/home path (names vary: `*SESSION_ID*`, `*_HOME`, `XDG_CONFIG_HOME`).
