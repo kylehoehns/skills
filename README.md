@@ -36,3 +36,7 @@ skills/
 ## Creating a skill
 
 Each skill is a folder with a `SKILL.md` whose frontmatter has a `name` and a `description`. Write the `description` as triggering conditions ("Use when…") so agents know when to reach for it. See the [Agent Skills specification](https://agentskills.io/specification) for the full format.
+
+## License
+
+[MIT](LICENSE)
