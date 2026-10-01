@@ -1,0 +1,5 @@
+interface:
+  display_name: "To Options"
+  short_description: "Show open questions as side-by-side options"
+policy:
+  allow_implicit_invocation: false
