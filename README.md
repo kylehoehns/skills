@@ -7,6 +7,7 @@ A small collection of reusable [Agent Skills](https://agentskills.io/specificati
 | Skill | What it does |
 |-------|--------------|
 | [`catchup`](skills/catchup/SKILL.md) | Returns to an existing session and summarizes where things left off, key decisions, and what's next. Trigger with `/catchup` or "catch me up". |
+| [`to-options`](skills/to-options/SKILL.md) | Turns the questions a grilling couldn't settle into one HTML page that shows each answer side by side, for the people who decide. Trigger with `/to-options` after a grilling session. |
 
 ## Installation
 
