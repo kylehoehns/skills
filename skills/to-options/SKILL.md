@@ -14,7 +14,7 @@ Turn the questions a grilling couldn't settle into an **options page**: one HTML
 
 **Show the answer, not the question.** Every open question becomes what someone would actually get under each option: the screen, the API response, the text message, the rows. The decider reacts to that, never to the transcript.
 
-1. **Sort the design tree.** Work from the grilling in this conversation. If there wasn't one, call the Skill tool with "grill-me" first. Put every question in exactly one pile:
+1. **Sort the design tree.** Work from the grilling in this conversation. If there wasn't one, call the Skill tool with "grilling" first. Put every question in exactly one pile:
    - **Decided**: the user settled it. It goes on the page as context, never as a question.
    - **Fact**: something the environment can answer. Look it up yourself, and call it a fact only when you can point at its source: the ticket line, the file, the vendor doc. A fact the ticket only implies is an open question.
    - **Open**: a trade-off the business cares about, owned by someone other than the user.
