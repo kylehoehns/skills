@@ -2,7 +2,7 @@
 
 The decider judges an option best when it sits inside a screen they already know: real header, real density, real data. On a blank page every option looks fine.
 
-This is the opposite of a `prototype`. A prototype's variants disagree about everything. Here the question fixes what varies, so every option is **the same screen with one region swapped**. Mark that region (a dashed outline works) so the eye goes straight to it.
+This is the opposite of a `prototype`. A prototype's variants disagree about everything. Here the question fixes what varies, so every option is **the same screen with one region swapped**. Mark that region (a dashed outline works) so the eye goes straight to it, and name the mark in the sentence above the view.
 
 ## The screen exists (preferred)
 
