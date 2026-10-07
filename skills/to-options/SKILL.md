@@ -33,7 +33,7 @@ Turn the questions a grilling couldn't settle into an **options page**: one HTML
 
    Every view gets one plain sentence above it saying what it shows, and keeps only the calls, fields and states that tell the options apart. Done when every option of every open question has its view, no question mixes kinds of view, and in the question's scenario no two options' views look the same.
 
-4. **Build the page.** Write one self-contained HTML file from the template below, publish it, and give the user the link. Done when every open question from step 1 has a tab, and the page reads cleanly at phone and laptop widths.
+4. **Build the page.** Write one self-contained HTML file from the template below. Open it at phone and laptop width (with a browser tool when you have one) and fix anything that overflows or clips. Publish it and give the user the link. Done when every open question from step 1 has a tab, and you have seen every tab fit at both widths.
 
 5. **Reshape.** The user will merge, split, cut and re-route questions. Rerun whichever steps the change touches and republish to the same path.
 
@@ -43,7 +43,7 @@ Turn the questions a grilling couldn't settle into an **options page**: one HTML
 
 - The effort's name.
 - The **problem statement**: what's wrong today and who it hurts, in two sentences. Then one sentence on what this effort changes.
-- One card per open question: the question and a link to its tab.
+- One card per open question: the question, one line on why it needs deciding, and a link to its tab.
 
 Below the fold, the decided list, so nobody reopens it.
 
@@ -51,7 +51,7 @@ Then one tab per open question:
 
 - **The question**, in the decider's words.
 - **The scenario**: one concrete moment with real-looking data, the same for every option, picked so each option gives a different result.
-- **The options**, side by side. Each one gets a name, one line saying what it means, its view, and two or three bullets on what it costs. Tag the user's lean only where they have one.
+- **The options**, side by side. Each one gets a name, one line saying what it means, its view, and two or three bullets on what it costs. Where the user has a lean, tag that option "the team's lean".
 - **The pick**: one line saying exactly what to choose, plus any number or name the choice needs ("pick A or B; if A, how often it refreshes").
 - **Downstream questions** sit under the question they depend on, labelled with the answer that unlocks them ("only if B").
 - **What we checked**: the facts this question rests on, each with its source.
