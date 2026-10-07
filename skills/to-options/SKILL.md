@@ -14,12 +14,16 @@ Turn the questions a grilling couldn't settle into an **options page**: one HTML
 
 **Show the answer, not the question.** Every open question becomes what someone would actually get under each option: the screen, the API response, the text message, the rows. The decider reacts to that, never to the transcript.
 
-1. **Sort the design tree.** Work from the grilling in this conversation. If there wasn't one, call the Skill tool with "grilling" first. Put every question in exactly one pile:
+1. **Sort the design tree.** Work from the grilling in this conversation. If there wasn't one, call the Skill tool with "grilling" first.
+
+   Keep grilling's design tree, frontier and fact-finding, and ask one question per turn in place of its rounds: through your multiple-choice question tool (or that question's options as a numbered list when you have none), with your recommended option first and **Defer** last. Defer means someone other than the user makes this call.
+
+   Put every question in exactly one pile:
    - **Decided**: the user settled it. It goes on the page as context, never as a question.
    - **Fact**: something the environment can answer. Look it up yourself, and call it a fact only when you can point at its source: the ticket line, the file, the vendor doc. A fact the ticket only implies is an open question.
-   - **Open**: a trade-off the business cares about, owned by someone other than the user.
+   - **Open**: a trade-off the business cares about, owned by someone other than the user. Every deferred question lands here, and the questions that hang off it become its downstream questions, left unasked.
 
-   An open question the user could settle alone isn't for the page: ask the user now. Done when every question from the grilling sits in one pile, every fact cites its source, and every open question names its decider by role.
+   An open question the user could settle alone isn't for the page: ask it now, the same way. Done when every question from the grilling sits in one pile, every fact cites its source, and every open question names its decider by role.
 
 2. **Ask about the send.** In one exchange, confirm the deciders, and for each question that changes a screen, which application and screen it lives in. Lead with your recommended answer so the user can accept it in a word. Done when every open question has a decider, and every screen question has a home screen or the user said it has none.
 
@@ -35,21 +39,29 @@ Turn the questions a grilling couldn't settle into an **options page**: one HTML
 
 <page-template>
 
-**Start here** tab: what the effort is, in two sentences. How to read the page. A table of open questions and who decides each. The facts, each with its source. The decided list, so nobody reopens it.
+**Start here** tab guides the decider into the questions. Above the fold sits only:
+
+- The effort's name.
+- The **problem statement**: what's wrong today and who it hurts, in two sentences. Then one sentence on what this effort changes.
+- One card per open question: the question and a link to its tab.
+
+Below the fold, the decided list, so nobody reopens it.
 
 Then one tab per open question:
 
-- **The question**, in the decider's words, and the decider's role.
+- **The question**, in the decider's words.
 - **The scenario**: one concrete moment with real-looking data, the same for every option.
 - **The options**, side by side. Each one gets a name, one line saying what it means, its view, and two or three bullets on what it costs. Tag the user's lean only where they have one.
 - **The pick**: one line saying exactly what to choose, plus any number or name the choice needs ("pick A or B; if A, how often it refreshes").
 - **Downstream questions** sit under the question they depend on, labelled with the answer that unlocks them ("only if B").
+- **What we checked**: the facts this question rests on, each with its source.
 
 </page-template>
 
 ## Rules
 
 - Name every person by role: "the owner", "the second in line", "the practice manager". Real names stay out, even when the ticket or the data has them.
+- The page speaks to every decider alike. Who decides what is the user's send list, so no card, tab or header names a question's decider.
 - Write in the decider's words. Labels inside a view stay real; the sentence above the view translates.
 - Offer only options the user would build.
 - The page starts a conversation. Answers come back in the meeting, so the page collects nothing.
